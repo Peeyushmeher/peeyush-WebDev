@@ -1,0 +1,10 @@
+h1{
+    background-color: red;
+    border: 3px blue;
+    color: wheat;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 25vw;
+    margin: 0 auto;
+}

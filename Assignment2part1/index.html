@@ -107,7 +107,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefox_logo-only_RGB.png" alt="Firefox logo">
+      <img src="firefox-logo120.png" alt="Firefox logo">
     </header>
 
     <main>
@@ -124,13 +124,25 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo-only_RGB.png" alt=" image1">
+          <img srcset="firefox-logo120.png 120w,
+                       firefox-logo400.png 400w"
+               sizes="(max-width: 500px) 120px,
+                      400px"
+               src="firefox-logo400.png" alt="image 1">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur-head.png" alt="image2">
+          <img srcset="mozilla-dinosaur120.png 120w,
+                       mozilla-dinosaur400.png 400w"
+               sizes="(max-width: 500px) 120px,
+                      400px"
+               src="mozilla-dinosaur400.png" alt="image 2">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons.jpg" alt="image3">
+          <img srcset="firefox-addons120.jpg 120w,
+                       firefox-addons400.jpg 400w"
+               sizes="(max-width: 500px) 120px,
+                      400px"
+               src="firefox-addons400.jpg" alt="image 3">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="mdn.svg" alt="image 4">
@@ -139,7 +151,10 @@
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda-portrait-small.jpg">
+          <img src="red-panda-landscape.jpg" alt="a red panda">
+        </picture>
       </div>
 
     </main>

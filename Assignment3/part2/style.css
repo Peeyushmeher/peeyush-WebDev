@@ -8,6 +8,17 @@
 
 html {
     font-family: sans-serif;
+
   }
   
-  /* Your CSS below here */   
+  /* Your CSS below here */    
+
+  div{
+    /* width of 200ppx box */
+    width: 200px;
+    /* height  of the box is 200 px */
+    height: 200px;
+     /* Center the box horizontally */
+    margin: 0 auto;
+    display: flex;
+  }

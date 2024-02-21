@@ -12,11 +12,16 @@
 * {
   box-sizing: border-box;
 }
+header{
+  padding: 20px;
+  font-family: 'OpenSansItalic' sans-serif;
+}
 
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-family: 'TomNewRoman', serif;
 }
 
 /* Layout */
@@ -40,7 +45,7 @@ footer {
   clear: both;
 }
 
-header, section, aside, nav, footer {
+ section, aside, nav, footer {
   padding: 20px;
 }
 
@@ -51,4 +56,23 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
+html {
+  font-size: 10px; /* Site-wide base font size */
+}
 /* WRITE YOUR CODE BELOW HERE */
+
+
+
+@font-face {
+  font-family: 'TomNewRoman';
+  src: url('tomnr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('OpenSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}

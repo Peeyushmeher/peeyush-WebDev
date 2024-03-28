@@ -1,3 +1,8 @@
+    Name: peeyush yerremsetty 
+	File: index.html
+	Date: April 4 2024 
+
+    
 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');

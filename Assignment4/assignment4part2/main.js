@@ -1,3 +1,8 @@
+// Name: peeyush yerremsetty 
+	// File: index.html
+	// Date: April 4 2024 
+    // Purpose: This is a image gallary 
+    
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 

@@ -29,3 +29,26 @@ const insertZ = [
   "melted into a puddle on the sidewalk",
   "turned into a slug and crawled away"
 ];
+
+// Add click event listener to the randomize button
+randomize.addEventListener('click', result);
+
+function result() {
+
+  if(customName.value !== '') {
+    const name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    const weight = Math.round(300);
+    const temperature =  Math.round(94);
+
+  }
+
+  story.textContent = '';
+  story.style.visibility = 'visible';
+}
+
+
+

@@ -1,5 +1,8 @@
 
-
+    // Name: peeyush yerremsetty 
+	// File: index.html
+	// Date: April 4 2024 
+    // Purpose: This is a Silly story generator
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');

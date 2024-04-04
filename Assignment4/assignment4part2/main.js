@@ -22,6 +22,19 @@ const imageAltText = {
   };
 
 /* Looping through images */
+imageFilenames.forEach((filename) => { 
+    const newImage = document.createElement('img'); 
+    newImage.setAttribute('src', `images/${filename}`); 
+    newImage.setAttribute('alt', imageAltText[filename]); 
+    thumbBar.appendChild(newImage); 
+  
+    // Add a click event listener to each <img> inside the thumb-bar <div> 
+    newImage.addEventListener('click', () => { 
+      displayedImage.src = newImage.src; 
+      displayedImage.alt = newImage.alt; 
+    }); 
+  }); 
+  
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);

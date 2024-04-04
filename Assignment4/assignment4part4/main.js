@@ -1,3 +1,8 @@
+    // Name: peeyush yerremsetty 
+	  // File: index.html
+	  // Date: April 4 2024 
+    // Purpose:  Bouncing balls advanced
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");

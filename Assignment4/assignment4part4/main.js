@@ -5,11 +5,13 @@
 
 // set up canvas
 
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+const ballCountPara = document.querySelector('#ballCount');
 
 // function to generate random number
 
@@ -83,7 +85,7 @@ class Ball extends Shape {
   }
 }
 
-//EvilCircle
+// //EvilCircle
 class EvilCircle extends Shape {
   constructor(x, y) {
     super(x, y, 20, 20);
@@ -145,7 +147,7 @@ class EvilCircle extends Shape {
         if (distance < this.size + ball.size) {
           ball.exists = false; // The ball is 'eaten'
           ballCount--; // Decrease the count of balls
-          ballCountPara.textContent = `Ball count: ${ballCount}`;
+          ballCountPara.textContent = ballCount;
         }
       }
     }
@@ -155,6 +157,9 @@ class EvilCircle extends Shape {
 
 
 const balls = [];
+
+
+
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -172,15 +177,32 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+// Initialize the EvilCircle
+const evilCircle = new EvilCircle(
+  random(0, width),
+  random(0, height)
+);
+
+// Set the ball count display
+let ballCount = balls.length;
+const ballCountDisplay = document.getElementById('ballCount');
+ballCountDisplay.textContent = ballCount;
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }

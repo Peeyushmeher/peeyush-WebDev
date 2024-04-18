@@ -1,3 +1,10 @@
+// Name: peeyush yerremsetty 
+	// File: index.html
+	// Date: April 18 2024 
+    // Purpose: Accessibility troubleshooting
+
+
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');

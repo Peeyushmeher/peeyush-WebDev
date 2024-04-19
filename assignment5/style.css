@@ -272,3 +272,8 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid #005fcc; /* Or another high-contrast color */
+}
